@@ -1,0 +1,17 @@
+½¬½%,{"class_name": "Sequential", "config": {"layers": [{"class_name": "Dense", "config": {"activation": "linear", "activity_regularizer": null, "batch_input_shape": [null, 1], "bias_constraint": null, "bias_initializer": {"class_name": "Zeros", "config": {"dtype": "float32"}}, "bias_regularizer": null, "dtype": "float32", "kernel_constraint": null, "kernel_initializer": {"class_name": "GlorotUniform", "config": {"dtype": "float32", "seed": null}}, "kernel_regularizer": null, "name": "dense_14", "trainable": true, "units": 1, "use_bias": true}}], "name": "sequential_14"}}‡fòæ{"class_name": "InputLayer", "config": {"batch_input_shape": [null, 1], "dtype": "float32", "name": "dense_14_input", "sparse": false}}îàÌ€÷{"class_name": "Dense", "config": {"activation": "linear", "activity_regularizer": null, "batch_input_shape": [null, 1], "bias_constraint": null, "bias_initializer": {"class_name": "Zeros", "config": {"dtype": "float32"}}, "bias_regularizer": null, "dtype": "float32", "kernel_constraint": null, "kernel_initializer": {"class_name": "GlorotUniform", "config": {"dtype": "float32", "seed": null}}, "kernel_regularizer": null, "name": "dense_14", "trainable": true, "units": 1, "use_bias": true}}Ô,æ?–XÿAÆ¢‹ª\
+k
+layer-0
+layer_with_weights-0
+layer-15
+OBJECT_CONFIG_JSON/.ATTRIBUTES/OBJECT_CONFIG_JSON
+><
+OBJECT_CONFIG_JSON&layer-0/.ATTRIBUTES/OBJECT_CONFIG_JSON
+a
+
+kernel
+biasI
+OBJECT_CONFIG_JSON3layer_with_weights-0/.ATTRIBUTES/OBJECT_CONFIG_JSON
+[Y
+VARIABLE_VALUEdense_14/kernel6layer_with_weights-0/kernel/.ATTRIBUTES/VARIABLE_VALUE
+WU
+VARIABLE_VALUEdense_14/bias4layer_with_weights-0/bias/.ATTRIBUTES/VARIABLE_VALUE
