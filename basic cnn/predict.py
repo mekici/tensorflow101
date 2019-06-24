@@ -7,7 +7,10 @@ Created on Tue May 21 11:20:00 2019
 """
 from keras.models import model_from_json
 from keras.models import load_model
+from keras import backend as K
 import numpy as np
+import matplotlib.pyplot as plt
+import cv2
 
 # load json and create model
 json_file = open('model.json', 'r')
@@ -17,16 +20,17 @@ loaded_model = model_from_json(loaded_model_json)
 # load weights into new model
 loaded_model.load_weights("model.h5")
 print("Loaded model from disk")
+num_channel=1
 
-model.save('model.hdf5')
 loaded_model=load_model('model.hdf5')
 
-test_image = cv2.imread('data/humans/rider-3.jpg')
+test_image = cv2.imread('rider-13.jpg')
 test_image=cv2.cvtColor(test_image, cv2.COLOR_BGR2GRAY)
 test_image=cv2.resize(test_image,(128,128))
 test_image = np.array(test_image)
 test_image = test_image.astype('float32')
 test_image /= 255
+K.set_image_dim_ordering('th')
 
 if num_channel==1:
 	if K.image_dim_ordering()=='th':
@@ -48,6 +52,8 @@ else:
 		print (test_image.shape)
         
         
-names = ['cats','dogs','horses','humans']
-result=np.argmax(model.predict(test_image))
-print(names[result])
+names = ['kediler','köpekler','atlar','insanlar']
+result=np.argmax(loaded_model.predict(test_image))
+
+
+print("bu fotoğraf şu sınıfa ait:", names[result])
